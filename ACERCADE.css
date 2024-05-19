@@ -1,0 +1,202 @@
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el logo y el título */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-titulo img {
+    width: 80px; /* Ajusta el tamaño según necesites */
+    margin-right: 10px;
+}
+header {
+    background-color: #D0ECE7; /* Add this line to set the background color */
+    color: black;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: linear-gradient(to bottom, #cddbf5, #a6c4f4, #7eaef3, #5687f1, #2d5fe9);
+}
+
+/* Estilo para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Ajusta según prefieras */
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+nav ul li button:hover {
+    background-color: #ddd; /* Cambia el color según prefieras */
+}
+
+/* Estilo para el footer */
+footer {
+    text-align: center;
+    margin-top: 50px; /* Ajusta según necesites */
+    padding: 20px 0;
+    background-color: #f2f2f2; /* Cambia el color según prefieras */
+}
+
+/* Estilo para los botones de redes sociales */
+.redes-sociales a {
+    margin-right: 10px;
+    color: #333; /* Cambia el color según prefieras */
+}
+
+/* Estilo para los testimonios */
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    border-radius: 50%; /* Para hacerlo circular, ajusta según prefieras */
+    margin-right: 20px; /* Ajusta según prefieras */
+}
+
+.testimonial p {
+    flex: 1; /* Para que ocupe el espacio restante */
+}
+
+/* Estilo para el título de Acerca de */
+#acerca-de h1 {
+    font-size: 24px; /* Ajusta según prefieras */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón del menú */
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 20px; /* Ajusta según prefieras */
+    color: blue; /* Cambia el color del texto a azul */
+    text-shadow: 1px 1px 2px black; /* Agrega contorno a las letras */
+    transition: box-shadow 0.3s; /* Agrega transición para la sombra */
+}
+
+.menu-button:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el cursor */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5); /* Agrega sombra al pasar el cursor */
+}
+
+
+
+
+/* Estilo para el contenedor del logo y el menú */
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#acerca-de h1{
+text-align: center;
+font-size: 45px;
+font-style: italic;
+}
+
+#acerca-de p{
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#testimonios h2{
+text-align: center;
+font-size: 30px;
+font-style: italic;
+}
+
+div.testimonial{
+    padding: 20px;
+    background-color: #D6EAF8 ; 
+    box-shadow: 0 2px 2px 0 royalblue, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    text-align: justify;
+    font-size: 20px;
+}
+
+#testimonios img{
+    width: 10%;
+    height: auto;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 20px; /* Ajusta según prefieras */
+    color: blue; /* Cambia el color del texto a azul */
+    text-shadow: 1px 1px 2px black; /* Agrega contorno a las letras */
+    transition: box-shadow 0.3s; /* Agrega transición para la sombra */
+}
+
+.menu-button:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el cursor */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5); /* Agrega sombra al pasar el cursor */
+}
+.contenedor {
+    width: 90%;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 768px) and (max-width: 992px) {
+    .contenedor {
+        width: 80%; /* Reduce el ancho del contenedor */
+    }
+}
+.contenedor {
+    width: 90vw; /* El contenedor ocupa el 90% del ancho de la ventana del navegador */
+    height: 50vh; /* El contenedor ocupa el 50% de la altura de la ventana del navegador */
+}

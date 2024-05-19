@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Supernova</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function cargarBootstrap() {
+            // Cargar el archivo CSS de Bootstrap
+            var bootstrapCSS = document.createElement("link");
+            bootstrapCSS.rel = "stylesheet";
+            bootstrapCSS.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+            document.head.appendChild(bootstrapCSS);
+
+            // Cargar el archivo JavaScript de Bootstrap
+            var bootstrapJS = document.createElement("script");
+            bootstrapJS.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js";
+            document.body.appendChild(bootstrapJS);
+        }
+    </script>
+</head>
+<body onload="cargarBootstrap()">
+
+</head>
+<body>
+<section class="contenedor">
+<div class="logo-titulo">
+        <img src="img/LOGO.png" alt="Logo">
+        <h1>SUPERNOVA</h1>
+    </div>
+
+<nav class="nav-menu">
+	<ul>
+	   
+            <li><button onclick="redireccionar('ACERCADE.html')">Acerca de</button></li>
+            <li><button onclick="redireccionar('RESERVAS.html')">Reservas</button></li>
+            <li><button onclick="redireccionar('AYUDA.html')">Ayuda</button></li>
+            <li><button onclick="redireccionar('HOTELES.html')">Hotel</button></li>
+            <li><button onclick="redireccionar('COLABORADORES.html')">Colaboradores</button></li>
+            </ul>
+            	</nav> 
+ 
+</section>
+<script>
+    function redireccionar(destino) {
+        window.location.href = destino;
+    }
+</script>
+
+
+  <div class="slider-container">
+        <div class="slides">
+            <div class="slide"><img src="img/ima1.jpg" alt="img/ima2.jpg"></div>
+            <div class="slide"><img src="img/ima2.jpg" alt="img/ima3.jpg"></div>
+            <div class="slide"><img src="img/ima3.jpg" alt="img/ima1.jpg"></div>
+        </div>
+        
+        <div class="slider-nav">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="image-indicator"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    </div>
+
+    <script src="script.js"></script>
+
+	</div>
+	
+	
+
+
+	
+
+
+
+<section class="Galeria">
+  <h1 class="texto">Promociones</h1>
+   <div class="Promociones">
+ 	
+ 	<div class="Promociones-1">
+ 	<img src="img/Mazatlan.jpg">
+ 	<div class="pie">
+ 		<p>Ocean view Mazatlan MXN 1,084</p>
+ 		<p>16% menos de lo habitual</p>
+ 	</div> 
+ </div>
+ <div class="Promociones-1">
+ 	<img src="img/CANCUN.jpg">
+ 	<div class="pie">
+ 		<p>Hotel Emporio Cancun MXN 2,585</p>
+ 		<p>10% menos de lo habitual</p>
+ 	</div>
+ </div>
+ <div class="Promociones-1">
+ 	<img src="img/CUERNAVACA.jpg">
+ 	<div class="pie">
+ 		<p>Hotel Grand Vista Cuernavaca MXN 855</p>
+ 		<p>20% menos de lo habitual</p>	
+ 	</div>
+ </div>
+ <div class="Promociones-1">
+ 			<img src="img/CDMX.jpg">
+ 			<div class="pie">
+ 			<p>Hotel CDMX centro MXN 492</p>
+ 			<p>30% menos de lo habitual</p>	
+ 			</div>	
+ </div>
+ </div>
+</section>
+
+
+
+
+<section>
+<h1 class="hotel">Hoteles</h1>
+	<div class="hoteles">
+		<div class="contenedor-imagenes">
+ 
+
+            <div class="Hoteles-1">
+ 			<img src="hoteles/m1.png">
+ 		    </div>
+
+            <div class="Hoteles-1">
+ 			<img src="hoteles/m2.png">
+ 		    </div>
+ 			  
+ 		    <div class="Hoteles-1">
+ 			<img src="hoteles/m3.png">
+ 		    </div>
+
+ 		    <div class="Hoteles-1">
+ 		 	<img src="hoteles/m4.png">
+ 		    </div>
+ 		</div>
+
+	</div>
+
+</section>
+<h1 class="title">Disfruta tus vacaciones al maximo con SUPERNOVA viajando a Puerto Vallarta Aparta Ahora</h1>
+<section>
+
+ <div class="contenedor">
+ <div id="video">
+ 	<iframe width="560" height="315" src="https://www.youtube.com/embed/T5t2yNAIzJk?si=BajoXopK5l9LwsAR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </div>
+ </div>
+ <h1 class="texto">Ubicacion De Hospedaje</h1>
+ <div id="mapa">
+ 	<embed src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119482.08231733799!2d-105.32194446965676!3d20.63639326333026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8421459f9dd2c143%3A0xfed79d5200a9ce25!2sKrystal%20Grand%20Puerto%20Vallarta!5e0!3m2!1ses-419!2smx!4v1714515768946!5m2!1ses-419!2smx" width="100" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></embed>
+ 	
+ </div>
+ 	</div>
+</section>
+<h1 class="texto">Descarga Nuestro PDF Para Que Siempre Lo Tengas A La Mano</h1>
+ 	<div class="Poster">
+ 	<iframe id="poster" src="Oferta.pdf" frameborder="0"></iframe>
+
+
+<section>
+	<div class="nosotros">
+		<h1 class="texto">Nosotros</h1>
+<hr>
+<p class="nos">Supernova ® inició operaciones en 2024 en la Ciudad de Gomez Palacio, México donde se ubica nuestra sede mas importante. Estamos enfocados en ofrecer viajes nacionales siempre con un servicio de calidad y descuentos exclusivos para nuestros clientes.</p>
+
+<p class="nos">En Supernova ®, nuestro amor por viajar va mucho más allá de solo vender viajes. Nos apasiona ayudar a nuestros clientes a vivir increíbles experiencias y descubrir el mundo.
+Tenemos como misión inspirar a la gente a viajar y a crear historias dignas de contarse. Por esta razón, más que paquetes vacacionales, ofrecemos a nuestros clientes un “Buen dia” basado en nuestros valores fundamentales que nos distinguen con una marca lider en la industria de los viajes: alegría, pasión, franqueza, amistad y amabilidad.
+Donde exista el sueño de viajar, Supernova ® estará para darte la tranquilidady la facilidad de realizar tu viaje. Ya sea asesorándote sobre tu viaje con nuestros expertos en nuestro número 800, teniendo atención personalizada en nuestros módulos de ventas ubicados en los principales centros comerciales del país, a través de nuestro sitio web donde podrás realizar tu pago de forma segura, puedes tener la confianza que te brindaremos la mejor experiencia en cada viaje.</p>
+<hr>
+	</div>
+</section>
+
+
+<footer>
+	<div class="footer-contenido">
+		<h3>Gracias por su visita!</h3>
+<div class="redes-sociales">
+    <a href="https://www.facebook.com/profile.php?id=61558799135262&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/Agenc_Supernova?t=EXm9Y-jYQDQW731eJVU-0A&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/estrella_pj95?igsh=MXdvcnRtcWNjdnBocQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- Puedes añadir más iconos y enlaces según necesites -->
+  </div>
+
+
+	</div>
+	<div class="footer-button"> 
+		<p>Tel 872-104-1256
+Horizonte Durango
+Todos los derechos reservados &copy; 2024 <span>Disenado por Estrella Salazar y Jesus Orona</span>
+		</p>
+	 </div>	
+</footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

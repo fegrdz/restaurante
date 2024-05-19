@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Reservas - Agencia de Viajes SUPERNOVA</title>
+    <link rel="stylesheet" href="RESERVAS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function cargarBootstrap() {
+            // Cargar el archivo CSS de Bootstrap
+            var bootstrapCSS = document.createElement("link");
+            bootstrapCSS.rel = "stylesheet";
+            bootstrapCSS.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+            document.head.appendChild(bootstrapCSS);
+
+            // Cargar el archivo JavaScript de Bootstrap
+            var bootstrapJS = document.createElement("script");
+            bootstrapJS.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js";
+            document.body.appendChild(bootstrapJS);
+        }
+    </script>
+</head>
+<body onload="cargarBootstrap()">
+
+</head>
+<body>
+    <div class="logo-menu">
+    <div class="logo-titulo">
+        <img src="img/LOGO.png" alt="Logo">
+        <h1>SUPERNOVA</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><button class="menu-button" onclick="redireccionar('Nova.html')">Regresar</button></li>
+        </ul>
+    </nav>
+</div>
+<script>
+    function redireccionar(destino) {
+        window.location.href = destino;
+    }
+</script>
+        <section class="reservas">
+            <h1>Reserva tu próximo viaje</h1>
+
+            <div class="paquetes-list">
+                <div class="paquete">
+                    <img src="img/CANCUN.jpg" alt="Destino 1">
+                    <h2>CANCÚN</h2>
+                    <p>Sumérgete en las aguas cristalinas del Caribe mexicano con nuestro paquete turístico a Cancún. Disfruta de días soleados en hermosas playas de arena blanca, explora antiguas ruinas mayas, sumérgete en emocionantes deportes acuáticos y déjate llevar por la vibrante vida nocturna de la zona hotelera. Con alojamientos de lujo y una amplia variedad de actividades, ¡Cancún es el destino perfecto para unas vacaciones inolvidables!</p>
+                    <button onclick="mostrarDetalles('paquete1')">Ver detalles</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/CDMX.jpg" alt="Destino 2">
+                    <h2>CDMX</h2>
+                    <p>Descubre la riqueza cultural e histórica de la Ciudad de México con nuestro paquete turístico a la capital del país. Recorre el centro histórico y maravíllate con la majestuosidad del Zócalo y la Catedral Metropolitana. Explora museos de clase mundial como el Museo Nacional de Antropología y el Museo Frida Kahlo, y déjate seducir por la deliciosa gastronomía mexicana en los mercados tradicionales y restaurantes emblemáticos. Con alojamientos cómodos y transporte seguro, ¡tu viaje a CDMX será inolvidable!.</p>
+                    <button onclick="mostrarDetalles('paquete2')">Ver detalles</button>
+                </div>
+                <!-- Agrega más paquetes turísticos según sea necesario -->
+                 <div class="paquete">
+                    <img src="img/MAZA.jpg" alt="Destino 3">
+                    <h2>MAZATLÁN</h2>
+                    <p>Sumérgete en el encanto costero de Mazatlán con nuestro paquete turístico a este destino del Pacífico mexicano. Disfruta de kilómetros de playas doradas, practica surf en las olas del océano, explora el centro histórico con sus coloridas plazas y edificios coloniales, y disfruta de la auténtica cocina sinaloense en los mejores restaurantes locales. Con opciones de alojamiento frente al mar y actividades emocionantes, ¡Mazatlán te espera con los brazos abiertos!</p>
+                    <button onclick="mostrarDetalles('paquete3')">Ver detalles</button>
+                </div>
+                 <div class="paquete">
+                    <img src="img/MONTERREY.jpg" alt="Destino 4">
+                    <h2>MONTERREY</h2>
+                    <p> Vive la energía y la modernidad de Monterrey con nuestro paquete turístico a esta ciudad cosmopolita del norte de México. Admira las imponentes vistas desde el Cerro de la Silla, explora el Parque Fundidora con su oferta cultural y recreativa, y disfruta de la deliciosa comida regiomontana en los restaurantes tradicionales y vanguardistas de la ciudad. Con alojamientos céntricos y opciones para explorar los alrededores, ¡Monterrey es el destino perfecto para una escapada urbana emocionante!</p>
+                    <button onclick="mostrarDetalles('paquete4')">Ver detalles</button>
+                </div>
+            </div>
+
+            <div id="detalles-paquete1" style="display: none;">
+                <h2>Detalles del Paquete CANCÚN</h2>
+                <ul>
+                    <li><strong>Duración del Paquete:</strong> 5 días / 4 noches.</li>
+                    <li><strong>Incluye:</strong>
+                        <ul>
+                            <li>Alojamiento en un resort todo incluido en la zona hotelera de Cancún.</li>
+                            <li>Traslados de ida y vuelta al aeropuerto.</li>
+                            <li>Excursiones opcionales a las ruinas mayas de Tulum y Chichén Itzá.</li>
+                            <li>Acceso a actividades acuáticas como buceo, snorkel y parasailing.</li>
+                            <li>Cena de bienvenida en un restaurante frente al mar.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Precio:</strong> Desde $1000 por persona.</li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div id="detalles-paquete2" style="display: none;">
+                <h2>Detalles del Paquete CDMX</h2>
+                <ul>
+                    <li><strong>Duración del Paquete:</strong> 4 días / 3 noches.</li>
+                    <li><strong>Incluye:</strong>
+                        <ul>
+                            <li>Alojamiento en un hotel boutique en el centro histórico de la Ciudad de México.</li>
+                            <li>Desayunos buffet diarios en el hotel.</li>
+                            <li>Visita guiada al Museo Nacional de Antropología y al Palacio de Bellas Artes.</li>
+                            <li>Tour gastronómico por los mercados tradicionales de la ciudad.</li>
+                            <li>Tarjeta de transporte público para explorar la ciudad a tu ritmo.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Precio:</strong> Desde $800 por persona.</li>
+                </ul>
+
+            </div>
+            <div id="detalles-paquete3" style="display: none;">
+                <h2>Detalles del Paquete MAZATLÁN</h2>
+                <ul>
+        <li><strong>Duración del Paquete:</strong> 4 días / 3 noches.</li>
+        <li><strong>Incluye:</strong>
+            <ul>
+                <li>Alojamiento en un hotel frente a la playa en el malecón de Mazatlán.</li>
+                <li>Desayunos buffet diarios con vista al mar.</li>
+                <li>Tour en bicicleta por el malecón y el centro histórico.</li>
+                <li>Excursión de avistamiento de ballenas en alta mar.</li>
+                <li>Cena de despedida en un restaurante típico de mariscos.</li>
+            </ul>
+        </li>
+        <li><strong>Precio:</strong> Desde $1200 por persona.</li>
+    </ul>
+
+            </div>
+            <div id="detalles-paquete4" style="display: none;">
+                <h2>Detalles del Paquete MONTERREY</h2>
+                <ul>
+        <li><strong>Duración del Paquete:</strong> 3 días / 2 noches.</li>
+        <li><strong>Incluye:</strong>
+            <ul>
+                <li>Alojamiento en un hotel de negocios en el centro de Monterrey.</li>
+                <li>Desayuno continental en el hotel.</li>
+                <li>Visita guiada al Parque Fundidora y al Paseo Santa Lucía.</li>
+                <li>Entradas al Museo MARCO y al Museo del Noreste.</li>
+                <li>Cena de cortes de carne en un restaurante especializado.</li>
+            </ul>
+        </li>
+        <li><strong>Precio:</strong> Desde $600 por persona.</li>
+    </ul>
+
+            </div>
+        </section>
+    </div>
+<section class="reserva-vuelo">
+    <p>¿Listo para reservar tu vuelo? Reserva para planificar tu próximo viaje con nosotros.</p>
+</section>
+<section class="Formulario">    
+        <article>
+            <form action="conexion.php" method="POST">
+                <h1>A dónde quieres viajar?</h1>
+                <select name="destino" required>
+                    <option value="" disabled selected>Elige tu destino</option>
+                    <option value="Cancún">Cancún</option>
+                    <option value="Cdmx">Cdmx</option>
+                    <option value="Mazatlán">Mazatlán</option>
+                    <option value="Monterrey">Monterrey</option>
+                    <option value="Puerto Vallarta">Puerto Vallarta</option>
+                    <!-- Agrega más opciones según necesites -->
+                </select>
+                <h1>Hotel</h1>
+                <select name="hotel" required>
+                    <option value="" disabled selected>Elige tu hotel</option>
+                    <option value="GRAND VELAS">GRAND VELAS</option>
+                    <option value="Zadún">Zadún</option>
+                    <option value="One & Only">One & Only</option>
+                    <option value="IBIS Hotel">IBIS Hotel</option>
+                    <!-- Agrega más opciones según necesites -->
+                </select>
+                <h1>Huéspedes Adultos</h1>
+                <input type="number" name="huespedadulto" value="1" min="1" required>
+                <h1>Huéspedes Menores</h1>
+                <input type="number" name="huespedmenor" value="0" min="0" required>
+                <h1>Habitación</h1>
+                <select name="habitacion" required>
+                    <option value="" disabled selected>Elige tu habitación</option>
+                    <option value="individual">Individual</option>
+                    <option value="doble">Doble</option>
+                    <option value="suite">Suite</option>
+                    <!-- Agrega más opciones según necesites -->
+                </select>
+                <h1>Fecha De Salida</h1>
+                <input type="date" name="iniciodeviaje" required>
+                <h1>Fecha De Regreso</h1>
+                <input type="date" name="findelviaje" required>
+                <h1>Correo Electrónico</h1>
+                <input type="email" name="correo" placeholder="Ingrese su correo electrónico" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>
+
+
+    <footer>
+        <!-- Contenido del footer -->
+        <div class="footer-contenido">
+        <h3>Gracias por su visita!</h3>
+<div class="redes-sociales">
+    <a href="https://www.facebook.com/profile.php?id=61558799135262&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/Agenc_Supernova?t=EXm9Y-jYQDQW731eJVU-0A&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/estrella_pj95?igsh=MXdvcnRtcWNjdnBocQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- Puedes añadir más iconos y enlaces según necesites -->
+  </div>
+
+
+    </div>
+    <div class="footer-button"> 
+        <p>Tel 872-104-1256
+Horizonte Durango
+Todos los derechos reservados &copy; 2024 <span>Diseñado por Estrella Salazar y Jesus Orona</span>
+        </p>
+     </div> 
+    </footer>
+
+    <script src="RESERVAS.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

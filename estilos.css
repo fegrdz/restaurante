@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    align-items: center;
+    text-align: center;
+    }
+header h1 {
+    font-size: 30px; /* Cambia el tamaño de la fuente según sea necesario */
+    display: center;
+    padding-top: 10px;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 50px; /* También puedes ajustar el tamaño del encabezado dentro de #header si es necesario */
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+header {
+    background-color: #D0ECE7; /* Cambia el color de fondo del encabezado */
+    color: black;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: linear-gradient(to bottom, #cddbf5, #a6c4f4, #7eaef3, #5687f1, #2d5fe9);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1{
+    font-size: 45px;
+    display: center;
+    padding-top: 10px;
+    align-items: center;
+}
+#header h1{
+    font-size: 65px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+h1 img{
+    display: center;
+    width: 100px;
+    align-items: center;   
+}
+
+ul li{
+display: inline-block;
+padding: 0px 20px;
+}
+
+ul li button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+}
+
+/* Estilos cuando el cursor está sobre los botones */
+ul li button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombreado más intenso al pasar el cursor */
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo-titulo {
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.logo-titulo img {
+    width: 100px; /* Ajustamos el tamaño del logo */
+    height: auto; /* Mantenemos la proporción del logo */
+    margin-right: 10px; /* Espaciado a la derecha del logo */
+}
+
+.logo-titulo h1 {
+    margin: 0; /* Eliminamos el margen por defecto del título */
+}
+
+.nav-menu {
+    /* Estilos para el menú de navegación */
+}
+
+.nav-menu ul {
+    list-style-type: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-left: 10px; /* Espaciado entre los elementos */
+}
+
+.nav-menu ul li button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+}
+
+.nav-menu ul li button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el cursor */
+}
+ 
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.prev {
+   position: relative;
+  left: -calc(100% + 10px); /* Calcula la posición respecto al 100% del ancho de su contenedor más un margen */
+  top: -50%; /* Para mantenerlo centrado verticalmente */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+
+}
+
+.next {
+   position: relative;
+  left: calc(940% + 990px); /* Calcula la posición respecto al 100% del ancho de su contenedor más un margen */
+  top: -50%; /* Para mantenerlo centrado verticalmente */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+
+}
+
+.image-indicator {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+
+.contenedor {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  padding: 20px 50px;
+}
+
+iframe, embed {
+  width: 1550px; /* Ancho de cada elemento */
+  height: 400px; /* Altura de cada elemento */
+  margin-right: 0px; /* Espacio entre los elementos */
+
+}
+
+.redes-sociales a {
+  display: inline-block; /* Asegura que los enlaces sean elementos en línea */
+  margin-right: 10px; /* Espacio entre los iconos */
+  font-size: 24px; /* Tamaño de fuente de los iconos */
+}
+
+ button{
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de fuente del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Borde redondeado del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+
+.Ofertas{
+    position: relative;
+    display: flex;
+    text-align: center;
+    padding: 20px 220px;
+}
+
+
+.contenedor-imagenes {
+  overflow-x: auto; /* Muestra la barra de desplazamiento horizontal */
+  white-space: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+  width: 100%; /* Ancho total del contenedor */
+  height: 200px; /* Altura del contenedor (ajusta según sea necesario) */
+  position: relative;
+    display: flex;
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+.contenedor-imagenes img {
+  display: inline-block; /* Muestra las imágenes en línea */
+  height: 100%; /* Altura de las imágenes igual a la del contenedor */
+  margin-right: 10px; /* Espacio entre las imágenes (ajusta según sea necesario) */
+}
+
+
+h1.texto{
+    font-size: 45px;
+    text-align: center;
+    font-family: nunito;
+}
+
+
+div.Promociones-1{
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 royalblue, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    float: right;
+    width: 300px;
+}
+
+div.Promociones-1 img{
+    width: 100%;
+    height: auto;
+}
+
+div.Promociones-1:hover{
+    border: 1px solid darkblue;
+    transform: rotate(0deg);
+}
+
+div.Pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px royalblue;
+    padding: 10px;
+}
+
+
+
+div.Hoteles-1{
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 royalblue, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    float: right;
+    width: 300px;
+}
+
+div.Hoteles-1 img{
+    width: 100%;
+    height: auto;
+}
+
+div.Hoteles-1:hover{
+    border: 1px solid darkblue;
+    transform: rotate(-3deg);
+}
+
+.Galeria {
+    /* Agrega estilos específicos para la sección de promociones */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para los elementos dentro de la sección de promociones */
+.Galeria .Promociones {
+    /* Agrega estilos específicos para los elementos dentro de la sección de promociones */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para los elementos individuales dentro de la sección de promociones */
+.Galeria .Promociones .Promociones-1 {
+    /* Agrega estilos específicos para los elementos individuales dentro de la sección de promociones */
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 royalblue, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    float: left; /* Los elementos flotarán hacia la izquierda */
+    width: 300px; /* Establece el ancho de cada elemento */
+}
+
+/* Estilos para la imagen dentro de la sección de promociones */
+.Galeria .Promociones .Promociones-1 img {
+    /* Agrega estilos específicos para la imagen dentro de la sección de promociones */
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para el pie de las promociones */
+.Galeria .Promociones .Promociones-1 .pie {
+    /* Agrega estilos específicos para el pie de las promociones */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-shadow: 2px 2px 5px royalblue; /* Agrega sombra al texto */
+    padding: 10px; /* Ajusta el espacio alrededor del pie */
+}
+
+/* Estilos para la sección de hoteles */
+.hoteles {
+    /* Agrega estilos específicos para la sección de hoteles */
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para los elementos dentro de la sección de hoteles */
+.hoteles .contenedor-imagenes {
+    /* Agrega estilos específicos para los elementos dentro de la sección de hoteles */
+    overflow-x: auto; /* Muestra la barra de desplazamiento horizontal si es necesario */
+    white-space: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    width: 100%; /* Establece el ancho total del contenedor */
+    height: 200px; /* Establece la altura del contenedor (ajusta según sea necesario) */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para las imágenes dentro de la sección de hoteles */
+.hoteles .contenedor-imagenes img {
+    /* Agrega estilos específicos para las imágenes dentro de la sección de hoteles */
+    display: inline-block; /* Muestra las imágenes en línea */
+    height: 100%; /* Establece la altura de las imágenes igual a la del contenedor */
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes (ajusta según sea necesario) */
+}
+
+
+#poster{
+    width: 50%;
+    height: 50%;
+}
+
+div.nosotros{
+    background-color: #E3E3E3;
+}
+
+.nosotros h1{
+    font-size: 30px;
+    font-style: italic;
+}
+
+p.nos{
+font-family: verdana;
+font-size: 14px;
+text-align: justify;
+margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 20px; /* Ajusta según prefieras */
+    color: blue; /* Cambia el color del texto a azul */
+    text-shadow: 1px 1px 2px black; /* Agrega contorno a las letras */
+    transition: box-shadow 0.3s; /* Agrega transición para la sombra */
+}
+
+.menu-button:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el cursor */
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5); /* Agrega sombra al pasar el cursor */
+}
+#video,
+#mapa,
+#poster {
+    margin: 20px auto; /* Centrar los elementos y añadir espaciado */
+    max-width: 100%; /* Asegurarse de que los elementos no excedan el ancho de su contenedor */
+}
+
+/* Centrar el vídeo horizontalmente */
+#video {
+    text-align: center;
+}
+
+/* Centrar el PDF horizontalmente */
+#poster {
+    display: block; /* Asegurarse de que el PDF se muestre como un elemento de bloque */
+    margin: 0 auto; /* Centrar el PDF */
+}
+
+/* Añadir un poco de relleno al mapa */
+#mapa {
+    padding: 20px; /* Añadir relleno alrededor del mapa */
+}
+#poster {
+    width: 80%; /* Establecer un ancho del 80% del contenedor */
+    height: 600px; /* Establecer una altura fija */
+}
+.contenedor {
+    width: 90%;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 768px) and (max-width: 992px) {
+    .contenedor {
+        width: 80%; /* Reduce el ancho del contenedor */
+    }
+}
+.contenedor {
+    width: 90vw; /* El contenedor ocupa el 90% del ancho de la ventana del navegador */
+    height: 50vh; /* El contenedor ocupa el 50% de la altura de la ventana del navegador */
+}
